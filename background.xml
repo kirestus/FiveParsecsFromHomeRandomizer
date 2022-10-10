@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+<race>
+    <raceName name="human">Human</raceName>
+    <roll>60</roll>
+    <stats>
+        <reactions>1</reactions>
+        <speed>4"</speed>
+        <cs>+0</cs>
+        <toughness>3</toughness>
+        <savvy>+0</savvy>
+
+    </stats>
+    <description>Baseline Human characters are plain, ordinary people. Distributed across thousands of worlds, cultures, and environments, their appearance, customs, and outlook on life can vary tremendously, but ultimately the baseline is Human, through and through.
+    </description>
+</race>
+
+<race>
+    <raceName name="Bot">Bot</raceName>
+    <roll>90</roll>
+    <stats>
+        <reactions>2</reactions>
+        <speed>4"</speed>
+        <cs>+1</cs>
+        <toughness>4</toughness>
+        <savvy>+2</savvy>
+
+    </stats>
+    <description>Typical Bots are built to a bewildering array of configurations, but the profile given here will fit most combat, security, and multipurpose Bots. They are fitted with emotionsimulation modules, allowing fairly complex “personalities”.
+    </description>
+
+
+</race>
+</metadata>
