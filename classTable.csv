@@ -1,0 +1,24 @@
+ROLL,CLASS,EFFECT,RESOURCES,STARTING ROLLS
+1,Working Class,"+1 Savvy, +1 Luck",,
+6,Technician,+1 Savvy,,+1 Gear
+10,Scientist,+1 Savvy,,+1 Gadget
+14,Hacker,+1 Savvy,Rival,
+18,Soldier,+1 Combat Skill,+1D6 credits,
+23,Mercenary,+1 Combat Skill,,+1 Military Weapon
+28,Agitator,,Rival,
+33,Primitive,+1 Speed,,+1 Low-tech Weapon
+37,Artist,,+1D6 credits,
+41,Negotiator,,"Patron, +1 story point",
+45,Trader,,+2D6 credits,
+50,Starship Crew,+1 Savvy,,
+55,Petty Criminal,+1 Speed,,
+59,Ganger,+1 Reactions,,+1 Low-tech Weapon
+64,Scoundrel,+1 Speed,,
+68,Enforcer,+1 Combat Skill,Patron,
+72,Special Agent,+1 Combat Skill,Patron,+1 Gadget
+76,Troubleshooter,+1 Reactions,,+1 Low-tech Weapon
+80,Bounty Hunter,+1 Speed,1 Rumor,+1 Low-tech Weapon
+84,Nomad,,,+1 Gear
+89,Explorer,+2 XP,,+1 Gear
+93,Punk,+2 XP,Rival,
+97,Scavenger,,1 Rumor,+1 High-tech Weapon

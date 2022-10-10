@@ -1,9 +1,18 @@
 ROLL,MOTIVATION,EFFECT,RESOURCES,STARTING ROLLS
 0,Wealth,,+1D6 credit,
-14,Fame,,+1 story point,
-19,Glory,+1 Combat Skill,,+1 Military Weapon
-26,Survival,+1 Toughness,,
-32,Escape,+1 Speed,,
-39,Adventure,,+1D6 credits,+1 Low-tech Weapon
-44,Truth,,"1 Rumor, +1 story point",
-49,Technology,,,
+8,Fame,,+1 story point,
+15,Glory,+1 Combat Skill,,+1 Military Weapon
+20,Survival,+1 Toughness,,
+27,Escape,+1 Speed,,
+33,Adventure,,+1D6 credits,+1 Low-tech Weapon
+40,Truth,,"1 Rumor, +1 story point",
+45,Technology,+1 Savvy,,+1 Gadget
+50,Discovery,+1 Savvy,,+1 Gear
+57,Loyalty,,"Patron, +1 story point",
+64,Revenge,+2 XP,Rival,
+70,Romance,,"1 Rumor, +1 story point",
+75,Faith,,"1 Rumor, +1 story point",
+80,Political,,"Patron, +1 story point",
+85,Power,+2 XP,Rival,
+91,Order,,"Patron, +1 story point",
+96,Freedom,+2 XP,,

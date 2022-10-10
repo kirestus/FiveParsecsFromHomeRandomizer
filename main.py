@@ -19,14 +19,20 @@ class PlayerCharacter:
     def setBG(self, bgid):
         self.bgid=bgid
 
+    def getBG(self):
+        return self.bgid
+
     def setMotiv(self, mvid):
         self.mvid = mvid
 
     def getMotiv(self,):
         return self.mvid
 
-    def getBG(self):
-        return self.bgid
+    def setClass(self, playerclassid):
+        self.playerclassid = playerclassid
+
+    def getClass(self,):
+        return self.playerclassid
 
     def getRace(self):
         return self.raceid
@@ -35,10 +41,15 @@ class PlayerCharacter:
         list=self.getRace()
         racestring = f"""
 /////////////////////////////////////////////////////////////////  
-Character ID: {self.classid+1}
-Character Class: {list[0]} 
-STATS Reactions: [{list[1]}],Speed: [{list[2]}"], Combat Skills: [+{list[3]}], Toughness: [{list[4]}], Savvy: [{list[5]}]
-Race Info: {list[6]}
+//  Character ID: {self.classid+1}
+//  Character Class: {list[0]} 
+//  STATS Reactions: [{list[1]}],Speed: [{list[2]}"], Combat Skills: [+{list[3]}], Toughness: [{list[4]}], Savvy: [{list[5]}]
+//
+//  Race Info: {list[6]}
+//
+//   Background: {self.bgid}
+//   Motivation: {self.mvid}
+//   Class: {self.getClass()}
 //////////////////////////////////////////////////////////////////  
 """
         print(racestring)
@@ -54,22 +65,13 @@ def Main():
         party[member].setRace((race.randomRace(diceroll.d100Roll(1,"race"))))
         party[member].setBG(bgandclass.getbackground())
         party[member].setMotiv(bgandclass.getMotivation())
+        party[member].setClass(bgandclass.getClass())
 
     (party[0].printRace())
-    print(party[0].bgid)
-    print(party[0].mvid)
-
     (party[1].printRace())
-    print(party[1].bgid)
-    print(party[1].mvid)
-
     (party[2].printRace())
-    print(party[2].bgid)
-    print(party[2].mvid)
-
     (party[3].printRace())
-    print(party[3].bgid)
-    print(party[3].mvid)
+
 
 
 
