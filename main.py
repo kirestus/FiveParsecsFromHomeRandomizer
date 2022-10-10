@@ -27,31 +27,37 @@ class PlayerCharacter:
     def printRace(self):
         list=self.getRace()
         racestring = f"""
-            //////////////////////////////////////////////////////////////////  
-            Character ID: {self.classid+1}
-            Character Class: {list[0]} 
-            STATS Reactions: [{list[1]}],Speed: [{list[2]}"], Combat Skills: [+{list[3]}], Toughness: [{list[4]}], Savvy: [{list[5]}]
-            Race Info: {list[6]}
-            //////////////////////////////////////////////////////////////////  
-            """
+/////////////////////////////////////////////////////////////////  
+Character ID: {self.classid+1}
+Character Class: {list[0]} 
+STATS Reactions: [{list[1]}],Speed: [{list[2]}"], Combat Skills: [+{list[3]}], Toughness: [{list[4]}], Savvy: [{list[5]}]
+Race Info: {list[6]}
+//////////////////////////////////////////////////////////////////  
+"""
         print(racestring)
-
-
 
 
 def Main():
     #Main loop of the program, will run on init
 
-    partysize = 4
+    partySize = 4
     party = list()
-    for member in range(partysize):
+    for member in range(partySize):
         party.append(PlayerCharacter(member))
         party[member].setRace((race.randomRace(diceroll.d100Roll(1,"race"))))
+        party[member].setBG(bgandclass.getbackground())
 
     (party[0].printRace())
+    print(party[0].bgid)
+
     (party[1].printRace())
+    print(party[1].bgid)
+
     (party[2].printRace())
+    print(party[2].bgid)
+
     (party[3].printRace())
+    print(party[3].bgid)
 
 
 

@@ -1,12 +1,20 @@
 import diceroll
 import pandas as pd
 
-def randombg(x):
+bgdata = 'bgTable.csv'
+bgdf = pd.read_csv(bgdata)
 
-    retrun("yolo")
 
-def randomclass(x):
+def getbackground():
+
+    roll = diceroll.d100Roll(1, "background")
+    shortlist = (bgdf.loc[bgdf['Roll'] <= roll])
+    # show only the closest item to our search
+    background = (shortlist.iloc[-1, 1])
+    return background
+
+
+def randomclass():
     return()
-
 
 
