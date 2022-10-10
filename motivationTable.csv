@@ -1,3 +1,9 @@
-Roll,MOTIVATION,EFFECT,RESOURCES,STARTING ROLLS
-8,Fame,,+1D6 credit,
-14,,,,
+ROLL,MOTIVATION,EFFECT,RESOURCES,STARTING ROLLS
+0,Wealth,,+1D6 credit,
+14,Fame,,+1 story point,
+19,Glory,+1 Combat Skill,,+1 Military Weapon
+26,Survival,+1 Toughness,,
+32,Escape,+1 Speed,,
+39,Adventure,,+1D6 credits,+1 Low-tech Weapon
+44,Truth,,"1 Rumor, +1 story point",
+49,Technology,,,

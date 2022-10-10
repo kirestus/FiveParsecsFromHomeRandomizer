@@ -11,12 +11,19 @@ class PlayerCharacter:
         # setting some variables with default values to change later
         self.classid = classid
         self.bgid = classid
+        self.mvid = classid
 
     def setRace(self, raceid):
         self.raceid = raceid
 
     def setBG(self, bgid):
         self.bgid=bgid
+
+    def setMotiv(self, mvid):
+        self.mvid = mvid
+
+    def getMotiv(self,):
+        return self.mvid
 
     def getBG(self):
         return self.bgid
@@ -46,18 +53,23 @@ def Main():
         party.append(PlayerCharacter(member))
         party[member].setRace((race.randomRace(diceroll.d100Roll(1,"race"))))
         party[member].setBG(bgandclass.getbackground())
+        party[member].setMotiv(bgandclass.getMotivation())
 
     (party[0].printRace())
     print(party[0].bgid)
+    print(party[0].mvid)
 
     (party[1].printRace())
     print(party[1].bgid)
+    print(party[1].mvid)
 
     (party[2].printRace())
     print(party[2].bgid)
+    print(party[2].mvid)
 
     (party[3].printRace())
     print(party[3].bgid)
+    print(party[3].mvid)
 
 
 
