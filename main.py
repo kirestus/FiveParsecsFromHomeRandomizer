@@ -3,6 +3,7 @@
 import race
 import diceroll
 import bgandclass
+import sys
 
 
 class PlayerCharacter:
@@ -13,29 +14,16 @@ class PlayerCharacter:
         self.bgid = classid
         self.mvid = classid
 
-    def setRace(self, raceid):
-        self.raceid = raceid
+# Set and get functions for the PC class
+    def setRace(self, raceid): self.raceid = raceid
+    def getRace(self):return self.raceid
+    def setBG(self, bgid): self.bgid=bgid
+    def getBG(self): return self.bgid
+    def setMotiv(self, mvid):self.mvid = mvid
+    def getMotiv(self,): return self.mvid
+    def setClass(self, playerclassid):self.playerclassid = playerclassid
+    def getClass(self,): return self.playerclassid
 
-    def setBG(self, bgid):
-        self.bgid=bgid
-
-    def getBG(self):
-        return self.bgid
-
-    def setMotiv(self, mvid):
-        self.mvid = mvid
-
-    def getMotiv(self,):
-        return self.mvid
-
-    def setClass(self, playerclassid):
-        self.playerclassid = playerclassid
-
-    def getClass(self,):
-        return self.playerclassid
-
-    def getRace(self):
-        return self.raceid
 
     def printRace(self):
         list=self.getRace()
@@ -56,21 +44,20 @@ class PlayerCharacter:
 
 
 def Main():
-    #Main loop of the program, will run on init
-
-    partySize = 4
+    # Main loop of the program, will run on init
+    charnumber = int(input("How many characters do you want to generate: "))
+    partySize = charnumber
     party = list()
     for member in range(partySize):
         party.append(PlayerCharacter(member))
-        party[member].setRace((race.randomRace(diceroll.d100Roll(1,"race"))))
+        party[member].setRace((race.randomRace(diceroll.d100Roll(1, "race"))))
         party[member].setBG(bgandclass.getbackground())
         party[member].setMotiv(bgandclass.getMotivation())
         party[member].setClass(bgandclass.getClass())
 
-    (party[0].printRace())
-    (party[1].printRace())
-    (party[2].printRace())
-    (party[3].printRace())
+    #this is used to display all the party members
+    for member in range(partySize):
+        (party[member].printRace())
 
 
 

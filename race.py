@@ -1,6 +1,7 @@
 import diceroll
 
 # creates and populates an array with the stats and name of a random race depennding on as series of die rolls
+# this whole thing is a mess that could have been handled better with a dictionary or spreadsheet but i dont want to redo it
 def randomRace(x):
     race = [0,0,0,0,0,0,0]
 
@@ -29,14 +30,14 @@ def randomRace(x):
         elif y <= 41: race = ['Hopeful Rookie',1,4,0,3,0, 'Wide-eyed and enthusiastic, you almos tfeel bad for this kid, because the universe is going to hit them like a ton of bricks.']
         elif y <= 47: race = ['Genetic Uplift',2,5,1,4,1, 'All manner of genetic adjustments arepossible with the basic Human template. This could, of course, be used to createliteral super-humans, if you have the cash. This one had the cash.']
         elif y <= 53: race = ['Mutant',1,4,0,3,0,'Genetic distorts are common enough sightsaround the galaxy, whether it’s due to black-war weaponry, scientific experiments, cosmic disturbances, or industrial pollution.']
-        elif y <= 58: race = 'Assault Bot'
-        elif y <= 62: race = 'Manipulator'
-        elif y <= 67: race = 'Primitive'
-        elif y <= 73: race = 'Feeler'
-        elif y <= 79: race = 'Emo Suppressed'
-        elif y <= 85: race = 'Minor Alien'
-        elif y <= 87: race = 'Traveler'
-        elif y <= 93: race = 'Empath'
+        elif y <= 58: race = ['Assault Bot',2,4,1,4,0, 'Like a typical work Bot, except encased in armor, and programmed with a homicidal demeanor']
+        elif y <= 62: race = ['Manipulator', 2,4,0,3,1, 'Bizarre-looking aliens renowned for their talents at communication and large-scale political machinations. Occasionally, they drag their tentacled selves out into the universe alone so they can observe the creatures that inhabit it.']
+        elif y <= 67: race = ['Primitive',1,4,0,3,0,'Inhabitants from a technologically regressed world sometimes find it difficult to shed their backwards ways. However, being handy with a blade has its uses.']
+        elif y <= 73: race = ['Feeler',1,4,0,3,0, 'Some cultures have extremely strong emotional output.']
+        elif y <= 79: race = ['Emo Suppressed',1,4,0,3,0,'Whether requested, imposed as a criminal punishment, or due to cultural customs, this character is unable to feel any emotions beyond those needed for rudimentary existence.']
+        elif y <= 85: race = ['Minor Alien',1,4,0,3,0,'One of the many alien species that do not form a major political entity in the Fringe regions (see p.143).']
+        elif y <= 87: race = ['Traveler', 3,4,0,4,2, 'An odd person, claiming they are not really from this moment in space and time. They certainly dress in an eccentric manner']
+        elif y <= 93: race = ['Empath' ,1,4,0,3,0, 'Minor psionic inclination allowing the easy reading of emotional states. Surprisingly handy during a negotiation process.']
         else: race = ['Bio-upgrade',1,4,0,3,0,'Humans with a heightened tolerance for cybernetic enhancements are often given genetic treatments to let them take full advantage of this fact.']
     else:
         race = "fail"
